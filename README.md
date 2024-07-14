@@ -85,8 +85,6 @@ If you don't have Python installed yet, head over to the official download page:
     venv\Scripts\activate
     ```
 
-
-
 **2. Download the Repo 📥**
 
 
