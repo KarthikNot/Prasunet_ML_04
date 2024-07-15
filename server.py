@@ -55,8 +55,8 @@ def main():
     if app_mode == 'Image Input':
         st.sidebar.write('Upload an image for classification:')
         uploaded_file = st.file_uploader('Choose an image...', type=['jpg', 'jpeg', 'png'])
-
         if uploaded_file is not None:
+            st.image(uploaded_file, width = 450)
             if st.button('Classify Image'):
                 predicted_class, confidence, prediction = classify_image(uploaded_file)
                 if predicted_class is not None:
